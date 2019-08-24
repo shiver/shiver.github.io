@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opinions on </title>
+    <link>https://shiver.github.io/tags/opinions/</link>
+    <description>Recent content in Opinions on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2019 | Follow on &lt;a href=&#34;https://twitter.com/shivernz&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://github.com/shiver&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 24 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://shiver.github.io/tags/opinions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Opinion - a view or judgement formed about something, not necessarily based on fact or knowledge</title>
+      <link>https://shiver.github.io/post/opinions/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shiver.github.io/post/opinions/</guid>
+      <description>As a software developer who has been in or around the industry in one way or another for just short of twenty years now, I find the content on the wider internet landscape more and more difficult to digest. This is not a comment on the quality of the writing, the intrusive nature of modern day advertising, or even the click-bait articles that are overt in their inaccuracies and increasingly pervasive.</description>
+    </item>
+    
+  </channel>
+</rss>
