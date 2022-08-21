@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>performance on Learn Everything</title>
+    <link>https://shiver.github.io/categories/performance/</link>
+    <description>Recent content in performance on Learn Everything</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2022 | Follow on &lt;a class=&#34;follow-item&#34; href=&#34;https://twitter.com/shivernz&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;a class=&#34;follow-item&#34; href=&#34;https://github.com/shiver&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 22 Aug 2022 07:41:39 +0800</lastBuildDate><atom:link href="https://shiver.github.io/categories/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lowering in C#</title>
+      <link>https://shiver.github.io/post/csharp-lowering/</link>
+      <pubDate>Mon, 22 Aug 2022 07:41:39 +0800</pubDate>
+      
+      <guid>https://shiver.github.io/post/csharp-lowering/</guid>
+      <description>Understanding the performance characteristics of a C# program isn&amp;rsquo;t always as straightforward as you might think. In much the same way as the JIT can take IL code, transform and then optimise it. Your C# code will first go through a phase where it is lowered before being transformed into IL.
+Shortcuts Rather than providing custom implementations for each syntax feature at the IL level, lowering allows the compiler authors to save a bit of time and convert that syntax into simpler constructs, which can then be transformed into IL.</description>
+    </item>
+    
+  </channel>
+</rss>
