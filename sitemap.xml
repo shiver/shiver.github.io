@@ -3,11 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://shiver.github.io/</loc>
-    <lastmod>2022-08-22T07:41:39+08:00</lastmod>
+    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url><url>
     <loc>https://shiver.github.io/categories/</loc>
-    <lastmod>2022-08-22T07:41:39+08:00</lastmod>
+    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/post/tracking-heap-allocations-in-rust/</loc>
+    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/post/</loc>
+    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/tags/profiling/</loc>
+    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/tags/rust/</loc>
+    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/categories/rust/</loc>
+    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/tags/</loc>
+    <lastmod>2022-08-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shiver.github.io/tags/compilers/</loc>
     <lastmod>2022-08-22T07:41:39+08:00</lastmod>
@@ -28,12 +46,6 @@
     <lastmod>2022-08-22T07:41:39+08:00</lastmod>
   </url><url>
     <loc>https://shiver.github.io/categories/performance/</loc>
-    <lastmod>2022-08-22T07:41:39+08:00</lastmod>
-  </url><url>
-    <loc>https://shiver.github.io/post/</loc>
-    <lastmod>2022-08-22T07:41:39+08:00</lastmod>
-  </url><url>
-    <loc>https://shiver.github.io/tags/</loc>
     <lastmod>2022-08-22T07:41:39+08:00</lastmod>
   </url><url>
     <loc>https://shiver.github.io/post/area_5150_and_the_demoscene/</loc>
