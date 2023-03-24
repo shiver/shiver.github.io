@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="" name="keywords">
 <meta content="Robert Vally" name="author">
-<meta property="og:title" content="Make your own quick, &#34;simple&#34; and portable heap allocation tracker in Rust - Learn Everything">
+<meta property="og:title" content="Make your own quick, &#34;simple&#34; and portable heap allocation tracker in Rust">
 <meta property="og:url" content="https://shiver.github.io/post/tracking-heap-allocations-in-rust/">
-<meta property="og:description" content="Learning everything">
+<meta property="og:description" content="Introduction Besides altering your algorithms, another easy way to improve the performance of your code is by reducing heap allocations. Compared to the heap, stack allocations are significantly faster to both allocate and free, as they are usually done by simply updating a pointer, potentially in a single operation, and often by a dedicated CPU register.
+The heap on the other hand is a complicated beast. There is a fair amount of bookkeeping involved when acquiring and potentially releasing memory for your application, and avoiding this overhead will usually net you some decent performance gains, especially if these are happening frequently in your code.">
 <meta property="og:type" content="website" />
 <title>Make your own quick, &#34;simple&#34; and portable heap allocation tracker in Rust | Learn Everything</title>
 
@@ -23,7 +24,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Karla:wght@300;400;800&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Karla:wght@300;400;800&display=swap" rel="stylesheet">
 
 
 <link rel="shortcut icon" href="https://shiver.github.io//favicon.ico">
