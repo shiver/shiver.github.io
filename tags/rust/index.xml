@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2022 | Follow on &lt;a class=&#34;follow-item&#34; href=&#34;https://twitter.com/shivernz&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;a class=&#34;follow-item&#34; href=&#34;https://github.com/shiver&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 25 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://shiver.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shiver.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why I find Rust interesting</title>
+      <link>https://shiver.github.io/post/why_i_find_rust_interesting/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://shiver.github.io/post/why_i_find_rust_interesting/</guid>
+      <description>Why I find Rust interesting Initially, I planned for this to be an introduction to the Rust programming language for colleagues at work. However, when looking around online for inspiration, I noticed that one thing there was no shortage of, were Rust introductions. So with that in mind, I thought I would instead focus why I personally find the language interesting.
+So I won&amp;rsquo;t be teaching you how to write Rust.</description>
+    </item>
+    
     <item>
       <title>Make your own quick, &#34;simple&#34; and portable heap allocation tracker in Rust</title>
       <link>https://shiver.github.io/post/tracking-heap-allocations-in-rust/</link>
