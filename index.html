@@ -108,7 +108,7 @@ So I won&rsquo;t be teaching you how to write Rust. I won&rsquo;t be giving an o
 
       
       <div class="content">
-        Introduction Besides altering your algorithms, another easy way to improve the performance of your code is by reducing heap allocations. Compared to the heap, stack allocations are significantly faster to both allocate and free, as they are usually done by simply updating a pointer, potentially in a single operation, and often by a dedicated CPU register.
+        Besides altering your algorithms, another easy way to improve the performance of your code is by reducing heap allocations. Compared to the heap, stack allocations are significantly faster to both allocate and free, as they are usually done by simply updating a pointer, potentially in a single operation, and often by a dedicated CPU register.
 The heap on the other hand is a complicated beast. There is a fair amount of bookkeeping involved when acquiring and potentially releasing memory for your application, and avoiding this overhead will usually net you some decent performance gains, especially if these are happening frequently in your code.
         
         ...<a class="is-link" href="https://shiver.github.io/post/tracking-heap-allocations-in-rust/" style="height:28px">
