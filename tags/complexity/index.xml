@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>complexity on Learn Everything</title>
+    <link>https://shiver.github.io/tags/complexity/</link>
+    <description>Recent content in complexity on Learn Everything</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2023 | Follow on &lt;a class=&#34;follow-item&#34; href=&#34;https://twitter.com/shivernz&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;a class=&#34;follow-item&#34; href=&#34;https://github.com/shiver&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://shiver.github.io/tags/complexity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Complexity</title>
+      <link>https://shiver.github.io/post/complexity/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shiver.github.io/post/complexity/</guid>
+      <description>Software development can be frustratingly difficult at times, but I suspect not in ways that one not involved in the process would expect. This assumption of mine is based on how I view other subjects which I have some interest in, but am a complete novice or worse.
+With drawing the thing most on my mind is simply trying to get my hand to produce the lines that I want. Even when trying to produce a single line it never looks exactly as I want.</description>
+    </item>
+    
+  </channel>
+</rss>

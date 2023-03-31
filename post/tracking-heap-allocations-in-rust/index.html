@@ -86,6 +86,28 @@ The heap on the other hand is a complicated beast. There is a fair amount of boo
 
     
     <hr>
+
+    
+<aside class="toc">
+    <header>
+    <h2>Contents</h2>
+    </header>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-to-replace-the-global-allocator">How to replace the global allocator</a></li>
+    <li><a href="#making-our-very-own-allocator">Making our very own allocator</a></li>
+    <li><a href="#implementing-alloc">Implementing <code>alloc</code></a></li>
+    <li><a href="#implementing-dealloc">Implementing <code>dealloc</code></a></li>
+    <li><a href="#instrumentation">Instrumentation</a></li>
+    <li><a href="#backtracing-the-ip">Backtracing the IP</a></li>
+    <li><a href="#bonus-objective-threading">Bonus objective: Threading</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+</aside>
+
+
     <div class="content">
       <p>Besides altering your algorithms, another easy way to improve the performance of your code is by reducing heap allocations. Compared to the heap, stack allocations are significantly faster to both allocate and free, as they are usually done by simply updating a pointer, potentially in a single operation, and often by a dedicated CPU register.</p>
 <p>The heap on the other hand is a <a href="https://www.jamesgolick.com/2013/5/15/memory-allocators-101.html">complicated</a> beast. There is a fair amount of bookkeeping involved when acquiring and potentially releasing memory for your application, and avoiding this overhead will usually net you some decent performance gains, especially if these are happening frequently in your code.</p>
