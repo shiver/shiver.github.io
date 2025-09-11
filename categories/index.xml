@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Learn Everything</title>
+    <title>Categories on </title>
     <link>https://shiver.github.io/categories/</link>
-    <description>Recent content in Categories on Learn Everything</description>
+    <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>&amp;copy; 2023 | Follow on &lt;a class=&#34;follow-item&#34; href=&#34;https://twitter.com/shivernz&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;a class=&#34;follow-item&#34; href=&#34;https://github.com/shiver&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 24 Mar 2023 08:00:00 +0800</lastBuildDate><atom:link href="https://shiver.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2025 | Follow on &lt;a class=&#34;follow-item&#34; href=&#34;https://x.com/shivernz&#34; target=&#34;_blank&#34;&gt;X&lt;/a&gt; | &lt;a class=&#34;follow-item&#34; href=&#34;https://github.com/shiver&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://shiver.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>abstractions</title>
+      <link>https://shiver.github.io/categories/abstractions/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://shiver.github.io/categories/abstractions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opinions</title>
+      <link>https://shiver.github.io/categories/opinions/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://shiver.github.io/categories/opinions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thoughts</title>
+      <link>https://shiver.github.io/categories/thoughts/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://shiver.github.io/categories/thoughts/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>rust</title>
       <link>https://shiver.github.io/categories/rust/</link>
@@ -41,15 +68,6 @@
       <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://shiver.github.io/categories/demoscene/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opinions</title>
-      <link>https://shiver.github.io/categories/opinions/</link>
-      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://shiver.github.io/categories/opinions/</guid>
       <description></description>
     </item>
     

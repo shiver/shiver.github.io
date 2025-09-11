@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>opinions on </title>
-    <link>https://shiver.github.io/categories/opinions/</link>
-    <description>Recent content in opinions on </description>
+    <title>abstractions on </title>
+    <link>https://shiver.github.io/categories/abstractions/</link>
+    <description>Recent content in abstractions on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2025 | Follow on &lt;a class=&#34;follow-item&#34; href=&#34;https://x.com/shivernz&#34; target=&#34;_blank&#34;&gt;X&lt;/a&gt; | &lt;a class=&#34;follow-item&#34; href=&#34;https://github.com/shiver&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://shiver.github.io/categories/opinions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://shiver.github.io/categories/abstractions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abstraction Attraction</title>
       <link>https://shiver.github.io/post/abstraction-attraction/</link>
@@ -16,15 +16,6 @@
       <guid>https://shiver.github.io/post/abstraction-attraction/</guid>
       <description>Introduction Abstraction is a foundational aspect of programming. It allows us as the programmers, to take what is a potentially complex, cumbersome, or perhaps simply an inconvenient system, and to expose only what you deem to be important, whilst hiding any unnecessary details. The hope is of course that by adding this abstraction, you make the system more convenient to work with, for solving your actual problem.
 The following is a simple example of an abstraction:</description>
-    </item>
-    
-    <item>
-      <title>Opinion - a view or judgement formed about something, not necessarily based on fact or knowledge</title>
-      <link>https://shiver.github.io/post/opinions/</link>
-      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://shiver.github.io/post/opinions/</guid>
-      <description>As a software developer who has been in or around the industry in one way or another for over twenty years now, I find the content on the wider internet landscape more and more difficult to digest. This is not a comment on the quality of the writing, the intrusive nature of modern day advertising, or even the click-bait articles that are overt in their inaccuracies and increasingly pervasive. Nor is this about the vitriolic endless back-and-forth between supporters for opposing ideologies, be they political or otherwise.</description>
     </item>
     
   </channel>

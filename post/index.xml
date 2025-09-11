@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Learn Everything</title>
+    <title>Posts on </title>
     <link>https://shiver.github.io/post/</link>
-    <description>Recent content in Posts on Learn Everything</description>
+    <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>&amp;copy; 2023 | Follow on &lt;a class=&#34;follow-item&#34; href=&#34;https://twitter.com/shivernz&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;a class=&#34;follow-item&#34; href=&#34;https://github.com/shiver&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 24 Mar 2023 08:00:00 +0800</lastBuildDate><atom:link href="https://shiver.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2025 | Follow on &lt;a class=&#34;follow-item&#34; href=&#34;https://x.com/shivernz&#34; target=&#34;_blank&#34;&gt;X&lt;/a&gt; | &lt;a class=&#34;follow-item&#34; href=&#34;https://github.com/shiver&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 11 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://shiver.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Abstraction Attraction</title>
+      <link>https://shiver.github.io/post/abstraction-attraction/</link>
+      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://shiver.github.io/post/abstraction-attraction/</guid>
+      <description>Introduction Abstraction is a foundational aspect of programming. It allows us as the programmers, to take what is a potentially complex, cumbersome, or perhaps simply an inconvenient system, and to expose only what you deem to be important, whilst hiding any unnecessary details. The hope is of course that by adding this abstraction, you make the system more convenient to work with, for solving your actual problem.
+The following is a simple example of an abstraction:</description>
+    </item>
+    
     <item>
       <title>Why I find Rust interesting</title>
       <link>https://shiver.github.io/post/why_i_find_rust_interesting/</link>
