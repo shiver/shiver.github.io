@@ -432,4 +432,29 @@ Hello, world!
 </script>
 
 
+<script type="text/javascript">
+  const toc = document.querySelectorAll('#TableOfContents > ul > li > a')
+  const headings = document.querySelectorAll('.content > h2')
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        toc.forEach(t => {
+          if (t.textContent === entry.target.textContent) {
+            toc.forEach(t => t.closest('li')?.classList.remove('active'))
+            t.closest('li')?.classList.add('active')
+          }
+        })
+      }
+    })
+  }, {
+    root: null,
+    rootMargin: '0px 0px -50% 0px',
+    threshold: 0
+  })
+  headings.forEach(h => observer.observe(h))
+</script>
+
+
+
 </body>
