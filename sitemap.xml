@@ -3,8 +3,35 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://shiver.github.io/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>https://shiver.github.io/categories/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/tags/code/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/tags/learning/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/categories/learning/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/categories/opinions/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/post/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/tags/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/categories/thoughts/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shiver.github.io/post/you-can-just-do-things/</loc>
+    <lastmod>2026-05-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shiver.github.io/post/abstraction-attraction/</loc>
     <lastmod>2025-09-11T00:00:00+00:00</lastmod>
@@ -13,21 +40,6 @@
     <lastmod>2025-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shiver.github.io/categories/abstractions/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://shiver.github.io/categories/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://shiver.github.io/categories/opinions/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://shiver.github.io/post/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://shiver.github.io/tags/</loc>
-    <lastmod>2025-09-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://shiver.github.io/categories/thoughts/</loc>
     <lastmod>2025-09-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shiver.github.io/tags/rust/</loc>

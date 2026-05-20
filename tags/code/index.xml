@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>thoughts on </title>
-    <link>https://shiver.github.io/categories/thoughts/</link>
-    <description>Recent content in thoughts on </description>
+    <title>code on </title>
+    <link>https://shiver.github.io/tags/code/</link>
+    <description>Recent content in code on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2025 | Follow on &lt;a class=&#34;follow-item&#34; href=&#34;https://x.com/shivernz&#34; target=&#34;_blank&#34;&gt;X&lt;/a&gt; | &lt;a class=&#34;follow-item&#34; href=&#34;https://github.com/shiver&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://shiver.github.io/categories/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://shiver.github.io/tags/code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>You can just do things</title>
       <link>https://shiver.github.io/post/you-can-just-do-things/</link>
@@ -16,16 +16,6 @@
       <guid>https://shiver.github.io/post/you-can-just-do-things/</guid>
       <description>A little while ago I was asked by someone trying to get their first role in programming on whether or not accepting a programming adjacent role would be a bad career move. They had up until this point not had much luck getting their first role, and had instead been offered a designer position, which they could do, but it wasn&amp;rsquo;t quite what they wanted.
 What follows is mostly the answer I gave.</description>
-    </item>
-    
-    <item>
-      <title>Abstraction Attraction</title>
-      <link>https://shiver.github.io/post/abstraction-attraction/</link>
-      <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://shiver.github.io/post/abstraction-attraction/</guid>
-      <description>Introduction Abstraction is a foundational aspect of programming. It allows us as the programmers, to take what is a potentially complex, cumbersome, or perhaps simply an inconvenient system, and expose only what you deem to be important, whilst hiding any unnecessary details. The hope is of course that by adding this abstraction, you make the system more convenient to work with for solving your actual problem.
-The following is a simple example of an abstraction:</description>
     </item>
     
   </channel>
