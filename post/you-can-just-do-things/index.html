@@ -88,13 +88,6 @@ What follows is mostly the answer I gave.">
     <hr>
 
     
-<aside class="toc">
-    <header>
-    <h2>Contents</h2>
-    </header>
-    <nav id="TableOfContents"></nav>
-</aside>
-
 
     <div class="content">
       <p>A little while ago I was asked by someone trying to get their first role in programming on whether or not accepting a programming adjacent role would be a bad career move. They had up until this point not had much luck getting their first role, and had instead been offered a designer position, which they could do, but it wasn&rsquo;t quite what they wanted.</p>
@@ -178,29 +171,6 @@ What follows is mostly the answer I gave.">
   gtag('config', 'G-T7DTW977S3');
 </script>
 
-
-<script type="text/javascript">
-  const toc = document.querySelectorAll('#TableOfContents > ul > li > a')
-  const headings = document.querySelectorAll('.content > h2')
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        toc.forEach(t => {
-          if (t.textContent === entry.target.textContent) {
-            toc.forEach(t => t.closest('li')?.classList.remove('active'))
-            t.closest('li')?.classList.add('active')
-          }
-        })
-      }
-    })
-  }, {
-    root: null,
-    rootMargin: '0px 0px -50% 0px',
-    threshold: 0
-  })
-  headings.forEach(h => observer.observe(h))
-</script>
 
 
 
