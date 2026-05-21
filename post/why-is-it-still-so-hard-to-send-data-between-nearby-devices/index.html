@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="Robert Vally" name="author">
+<meta property="og:title" content="Why Is It Still So Hard To Send Data Between Nearby Devices?">
+<meta property="og:url" content="https://shiver.github.io/post/why-is-it-still-so-hard-to-send-data-between-nearby-devices/">
+<meta property="og:description" content="Introduction You have a picture you want to copy from your Android mobile to your Apple laptop. You&rsquo;ve been making some notes on your iOS tablet and want to copy these onto your Windows desktop. You have a humorous clip you want to share with your significant other sitting next to you on the couch. You need to share a sensitive document with a colleague at your office, you have a Mac, and they&rsquo;re running Linux.">
+<meta property="og:type" content="website" />
+<title>Why Is It Still So Hard To Send Data Between Nearby Devices? | </title>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Karla:wght@300;400;800&display=swap" rel="stylesheet">
+
+
+<link rel="shortcut icon" href="https://shiver.github.io//favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/gruvbox-dark-hard.min.css">
+
+
+<link rel="stylesheet" href="https://shiver.github.io//css/style.css">
+
+</head>
+
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://shiver.github.io/"><h1 class="back is-4">🡠</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level">
+          
+          <a class="level-item" href="https://github.com/shiver" target="_blank">
+            <span class="icon">
+              <i class="fa-brands fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://x.com/shivernz" target="_blank">
+            <span class="icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://www.linkedin.com/in/robert-vally-3533a515" target="_blank">
+            <span class="icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/index.xml" target="_blank">
+            <span class="icon">
+              <i class="fa-solid fa-rss"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Why Is It Still So Hard To Send Data Between Nearby Devices?</h1>
+    <h2 class="subtitle">May 21, 2026 by Robert Vally</h2>
+    
+      <div class="tags">
+    
+        <a class="is-link" href="/tags/projects">projects</a>
+    
+        <a class="is-link" href="/tags/cabal">cabal</a>
+    
+</div>
+
+    
+    <hr>
+
+    
+<aside class="toc">
+    <header>
+    <h2>Contents</h2>
+    </header>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#what-do-i-want-demand">What do I want (demand)</a></li>
+    <li><a href="#fine-ill-do-it-myself">Fine I&rsquo;ll do it myself</a></li>
+  </ul>
+</nav>
+</aside>
+
+
+    <div class="content">
+      <h2 id="introduction">Introduction</h2>
+<ul>
+<li>You have a picture you want to copy from your Android mobile to your Apple laptop.</li>
+<li>You&rsquo;ve been making some notes on your iOS tablet and want to copy these onto your Windows desktop.</li>
+<li>You have a humorous clip you want to share with your significant other sitting next to you on the couch.</li>
+<li>You need to share a sensitive document with a colleague at your office, you have a Mac, and they&rsquo;re running Linux.</li>
+<li>Dinner is ready, and you want to let your kids on the other side of the house know, but you don&rsquo;t want to scream through several doors and a pair of noise cancelling headphones.</li>
+</ul>
+<p>We have amazingly powerful devices in our pockets and on our desks, and our local networks are blazingly fast, yet the solution to all of these problems is different, unnecessarily complicated, or involves sending your sensitive or personal information through several nebulous cloud services thousands of miles away. In all of these examples, both peers are connected to the same network, either via WiFi or Ethernet, and yet it is so difficult to just send a tiny bit of data between them easily. Why is that?</p>
+<p>Sure, if you&rsquo;ve gone all in on the Apple ecosystem, then AirDrop is a great solution when it comes to file transfers. Google and others have their own nearby-sharing systems, but they are still fragmented across platforms and ecosystems. What about the others though? Why do we need to be <em>blessed</em> by the operating system gods before we are given the necessary tools to transfer data between devices?</p>
+<p>There are plenty of other solutions that will also get the job done for you, but the costs are often unreasonably high in my opinion.</p>
+<p>You can use Windows or Samba shares, but the added complexity that has been introduced in the name of security makes the entire experience feel far more cumbersome than it should. And sure, documents can be shared through services like Google Drive, passwords through 1Password, pictures through iCloud, and you can send your kids a message on WhatsApp, but each one requires something personal from you, usually in the form of an account attached to your social login or email address, which then forces your data to leave the local network and pass through third-party infrastructure, even when the person or device you want to reach is within touching distance.</p>
+<p>As you can tell, I&rsquo;m not overly happy with the status quo.</p>
+<p>Back in 2018 I got fed up enough to create a few prototypes that could send files between devices on the same network, across Windows, Linux and Mac, but they were still very rough. Since then a few promising solutions have popped up. Some very close to my original goal, but in that time the scope of my demands have only increased, the tooling has not kept up, and I am still very unhappy with where we are right now.</p>
+<h2 id="what-do-i-want-demand">What do I want (demand)</h2>
+<p>I am aware of some of the existing alternatives of course, and personally use a few of them myself already. <a href="https://localsend.org/">LocalSend</a> is perhaps the most noteworthy of the bunch, and surprisingly similar to what I was originally after. The other is <a href="https://syncthing.net/">SyncThing</a> of course. Both of these are great pieces of software, and you should definitely give them a go. I am also sure that there are other options out there (and I would love to hear about them all), but I have resigned myself to that fact that none are likely to offer the set of features I am looking for.</p>
+<p>So what do I actually want?</p>
+<ul>
+<li>Something that can run in either a terminal or a user-friendly GUI</li>
+<li>Supports communication on both LAN and the wider internet</li>
+<li>Can act as a relay between devices that are unable to establish direct connections</li>
+<li>If you don&rsquo;t want to run your own relay, you can piggyback on existing infrastructure instead</li>
+<li>Regardless of how the data is transmitted, it should always be encrypted end-to-end</li>
+<li>Relays should move the bytes, not be able to read them</li>
+<li>Can operate in restricted network environments</li>
+<li>Does not require the user to understand networking (forwarding ports, etc)</li>
+<li>Cares deeply about performance and not abusing the host&rsquo;s resources</li>
+<li>Can handle chat messages, and transmit either files or media streams (video + audio)</li>
+<li>Works seamlessly across all manner of devices (Windows, Linux, Mac, iOS, Android)</li>
+</ul>
+<p>Most importantly, the core should remain simple to distribute: ideally as one self-contained binary on desktop, with thin platform-specific wrappers for mobile where required.</p>
+<p>Surely none of that is unreasonable, right?</p>
+<h2 id="fine-ill-do-it-myself">Fine I&rsquo;ll do it myself</h2>
+<p>There are vanishingly few people building <a href="https://github.com/EpicGamesExt/raddebugger">this</a> <a href="https://filepilot.tech/">kind</a> of <a href="https://taskslinger.net/">software</a> these days though, and even fewer people willing to fund these sorts of endeavours. With there being existing &ldquo;solutions&rdquo; to these sorts of problems, the natural response to proposing yet another tool to do effectively the same job is obviously going to be met with some degree of friction. However, I firmly believe that we can truly build something user-friendly, that respects the user&rsquo;s privacy and hardware, but at the same time is robust and powerful enough to help reduce our reliance on third-parties to simply transfer a bit of data around (besides your ISP of course).</p>
+<p>In future posts I will demonstrate where I currently am with the project, but also try to delve a little deeper on the technical aspects of the implementation too, since I honestly find this somewhat low-level networking quite interesting.</p>
+<p>Obviously no one is paying me to work on this, but if you happen to be floating in cash and want to fund this endeavour, feel free to reach out!</p>
+<p>On a more serious note though, I will continue plodding onwards with this project regardless, with the goal to eventually open source it at some point (where it will be fodder for another AI model I am sure). I do have some ideas for how to monetise this long term with bespoke functionality for a more corporate clients, but I have resigned myself somewhat to the fact that this will likely remain a hobby project I will chip away at for the next few years and eventually release.</p>
+<p>Regardless, I think tooling like this should exist, if only to make my own life a little better.</p>
+<hr>
+<ul>
+<li>LocalSend - <a href="https://localsend.org/">https://localsend.org/</a></li>
+<li>SyncThing - <a href="https://syncthing.net/">https://syncthing.net/</a></li>
+<li>File Pilot - <a href="https://filepilot.tech/">https://filepilot.tech/</a></li>
+<li>TaskSlinger - <a href="https://taskslinger.net/">https://taskslinger.net/</a></li>
+<li>RAD Debugger - <a href="https://github.com/EpicGamesExt/raddebugger">https://github.com/EpicGamesExt/raddebugger</a></li>
+</ul>
+
+    </div>
+    
+    <div class="nav-center">
+    <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fshiver.github.io%2fpost%2fwhy-is-it-still-so-hard-to-send-data-between-nearby-devices%2f" title="Share on Facebook" target="_blank"><span class="fa-brands fa-facebook fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fshiver.github.io%2fpost%2fwhy-is-it-still-so-hard-to-send-data-between-nearby-devices%2f" title="Share on LinkedIn" target="_blank"><span class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://twitter.com/home?status=Why%20Is%20It%20Still%20So%20Hard%20To%20Send%20Data%20Between%20Nearby%20Devices%3f - https%3a%2f%2fshiver.github.io%2fpost%2fwhy-is-it-still-so-hard-to-send-data-between-nearby-devices%2f" title="Tweet this" target="_blank"><span class="fa-brands fa-x-twitter fa-2x"></span></a>
+    <a class="nav-item" href="http://www.reddit.com/submit?url=https%3a%2f%2fshiver.github.io%2fpost%2fwhy-is-it-still-so-hard-to-send-data-between-nearby-devices%2f&title=Why%20Is%20It%20Still%20So%20Hard%20To%20Send%20Data%20Between%20Nearby%20Devices%3f" title="Share on Reddit" target="_blank"><span class="fa-brands fa-reddit-alien fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="mailto:?subject=Why%20Is%20It%20Still%20So%20Hard%20To%20Send%20Data%20Between%20Nearby%20Devices%3f&body=%3ch2%20id%3d%22introduction%22%3eIntroduction%3c%2fh2%3e%0a%3cul%3e%0a%3cli%3eYou%20have%20a%20picture%20you%20want%20to%20copy%20from%20your%20Android%20mobile%20to%20your%20Apple%20laptop.%3c%2fli%3e%0a%3cli%3eYou%26rsquo%3bve%20been%20making%20some%20notes%20on%20your%20iOS%20tablet%20and%20want%20to%20copy%20these%20onto%20your%20Windows%20desktop.%3c%2fli%3e%0a%3cli%3eYou%20have%20a%20humorous%20clip%20you%20want%20to%20share%20with%20your%20significant%20other%20sitting%20next%20to%20you%20on%20the%20couch.%3c%2fli%3e%0a%3cli%3eYou%20need%20to%20share%20a%20sensitive%20document%20with%20a%20colleague%20at%20your%20office%2c%20you%20have%20a%20Mac%2c%20and%20they%26rsquo%3bre%20running%20Linux.%3c%2fli%3e%0a%3cli%3eDinner%20is%20ready%2c%20and%20you%20want%20to%20let%20your%20kids%20on%20the%20other%20side%20of%20the%20house%20know%2c%20but%20you%20don%26rsquo%3bt%20want%20to%20scream%20through%20several%20doors%20and%20a%20pair%20of%20noise%20cancelling%20headphones.%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eWe%20have%20amazingly%20powerful%20devices%20in%20our%20pockets%20and%20on%20our%20desks%2c%20and%20our%20local%20networks%20are%20blazingly%20fast%2c%20yet%20the%20solution%20to%20all%20of%20these%20problems%20is%20different%2c%20unnecessarily%20complicated%2c%20or%20involves%20sending%20your%20sensitive%20or%20personal%20information%20through%20several%20nebulous%20cloud%20services%20thousands%20of%20miles%20away.%20In%20all%20of%20these%20examples%2c%20both%20peers%20are%20connected%20to%20the%20same%20network%2c%20either%20via%20WiFi%20or%20Ethernet%2c%20and%20yet%20it%20is%20so%20difficult%20to%20just%20send%20a%20tiny%20bit%20of%20data%20between%20them%20easily.%20Why%20is%20that%3f%3c%2fp%3e%0a%3cp%3eSure%2c%20if%20you%26rsquo%3bve%20gone%20all%20in%20on%20the%20Apple%20ecosystem%2c%20then%20AirDrop%20is%20a%20great%20solution%20when%20it%20comes%20to%20file%20transfers.%20Google%20and%20others%20have%20their%20own%20nearby-sharing%20systems%2c%20but%20they%20are%20still%20fragmented%20across%20platforms%20and%20ecosystems.%20What%20about%20the%20others%20though%3f%20Why%20do%20we%20need%20to%20be%20%3cem%3eblessed%3c%2fem%3e%20by%20the%20operating%20system%20gods%20before%20we%20are%20given%20the%20necessary%20tools%20to%20transfer%20data%20between%20devices%3f%3c%2fp%3e%0a%3cp%3eThere%20are%20plenty%20of%20other%20solutions%20that%20will%20also%20get%20the%20job%20done%20for%20you%2c%20but%20the%20costs%20are%20often%20unreasonably%20high%20in%20my%20opinion.%3c%2fp%3e%0a%3cp%3eYou%20can%20use%20Windows%20or%20Samba%20shares%2c%20but%20the%20added%20complexity%20that%20has%20been%20introduced%20in%20the%20name%20of%20security%20makes%20the%20entire%20experience%20feel%20far%20more%20cumbersome%20than%20it%20should.%20And%20sure%2c%20documents%20can%20be%20shared%20through%20services%20like%20Google%20Drive%2c%20passwords%20through%201Password%2c%20pictures%20through%20iCloud%2c%20and%20you%20can%20send%20your%20kids%20a%20message%20on%20WhatsApp%2c%20but%20each%20one%20requires%20something%20personal%20from%20you%2c%20usually%20in%20the%20form%20of%20an%20account%20attached%20to%20your%20social%20login%20or%20email%20address%2c%20which%20then%20forces%20your%20data%20to%20leave%20the%20local%20network%20and%20pass%20through%20third-party%20infrastructure%2c%20even%20when%20the%20person%20or%20device%20you%20want%20to%20reach%20is%20within%20touching%20distance.%3c%2fp%3e%0a%3cp%3eAs%20you%20can%20tell%2c%20I%26rsquo%3bm%20not%20overly%20happy%20with%20the%20status%20quo.%3c%2fp%3e%0a%3cp%3eBack%20in%202018%20I%20got%20fed%20up%20enough%20to%20create%20a%20few%20prototypes%20that%20could%20send%20files%20between%20devices%20on%20the%20same%20network%2c%20across%20Windows%2c%20Linux%20and%20Mac%2c%20but%20they%20were%20still%20very%20rough.%20Since%20then%20a%20few%20promising%20solutions%20have%20popped%20up.%20Some%20very%20close%20to%20my%20original%20goal%2c%20but%20in%20that%20time%20the%20scope%20of%20my%20demands%20have%20only%20increased%2c%20the%20tooling%20has%20not%20kept%20up%2c%20and%20I%20am%20still%20very%20unhappy%20with%20where%20we%20are%20right%20now.%3c%2fp%3e%0a%3ch2%20id%3d%22what-do-i-want-demand%22%3eWhat%20do%20I%20want%20%28demand%29%3c%2fh2%3e%0a%3cp%3eI%20am%20aware%20of%20some%20of%20the%20existing%20alternatives%20of%20course%2c%20and%20personally%20use%20a%20few%20of%20them%20myself%20already.%20%3ca%20href%3d%22https%3a%2f%2flocalsend.org%2f%22%3eLocalSend%3c%2fa%3e%20is%20perhaps%20the%20most%20noteworthy%20of%20the%20bunch%2c%20and%20surprisingly%20similar%20to%20what%20I%20was%20originally%20after.%20The%20other%20is%20%3ca%20href%3d%22https%3a%2f%2fsyncthing.net%2f%22%3eSyncThing%3c%2fa%3e%20of%20course.%20Both%20of%20these%20are%20great%20pieces%20of%20software%2c%20and%20you%20should%20definitely%20give%20them%20a%20go.%20I%20am%20also%20sure%20that%20there%20are%20other%20options%20out%20there%20%28and%20I%20would%20love%20to%20hear%20about%20them%20all%29%2c%20but%20I%20have%20resigned%20myself%20to%20that%20fact%20that%20none%20are%20likely%20to%20offer%20the%20set%20of%20features%20I%20am%20looking%20for.%3c%2fp%3e%0a%3cp%3eSo%20what%20do%20I%20actually%20want%3f%3c%2fp%3e%0a%3cul%3e%0a%3cli%3eSomething%20that%20can%20run%20in%20either%20a%20terminal%20or%20a%20user-friendly%20GUI%3c%2fli%3e%0a%3cli%3eSupports%20communication%20on%20both%20LAN%20and%20the%20wider%20internet%3c%2fli%3e%0a%3cli%3eCan%20act%20as%20a%20relay%20between%20devices%20that%20are%20unable%20to%20establish%20direct%20connections%3c%2fli%3e%0a%3cli%3eIf%20you%20don%26rsquo%3bt%20want%20to%20run%20your%20own%20relay%2c%20you%20can%20piggyback%20on%20existing%20infrastructure%20instead%3c%2fli%3e%0a%3cli%3eRegardless%20of%20how%20the%20data%20is%20transmitted%2c%20it%20should%20always%20be%20encrypted%20end-to-end%3c%2fli%3e%0a%3cli%3eRelays%20should%20move%20the%20bytes%2c%20not%20be%20able%20to%20read%20them%3c%2fli%3e%0a%3cli%3eCan%20operate%20in%20restricted%20network%20environments%3c%2fli%3e%0a%3cli%3eDoes%20not%20require%20the%20user%20to%20understand%20networking%20%28forwarding%20ports%2c%20etc%29%3c%2fli%3e%0a%3cli%3eCares%20deeply%20about%20performance%20and%20not%20abusing%20the%20host%26rsquo%3bs%20resources%3c%2fli%3e%0a%3cli%3eCan%20handle%20chat%20messages%2c%20and%20transmit%20either%20files%20or%20media%20streams%20%28video%20%2b%20audio%29%3c%2fli%3e%0a%3cli%3eWorks%20seamlessly%20across%20all%20manner%20of%20devices%20%28Windows%2c%20Linux%2c%20Mac%2c%20iOS%2c%20Android%29%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eMost%20importantly%2c%20the%20core%20should%20remain%20simple%20to%20distribute%3a%20ideally%20as%20one%20self-contained%20binary%20on%20desktop%2c%20with%20thin%20platform-specific%20wrappers%20for%20mobile%20where%20required.%3c%2fp%3e%0a%3cp%3eSurely%20none%20of%20that%20is%20unreasonable%2c%20right%3f%3c%2fp%3e%0a%3ch2%20id%3d%22fine-ill-do-it-myself%22%3eFine%20I%26rsquo%3bll%20do%20it%20myself%3c%2fh2%3e%0a%3cp%3eThere%20are%20vanishingly%20few%20people%20building%20%3ca%20href%3d%22https%3a%2f%2fgithub.com%2fEpicGamesExt%2fraddebugger%22%3ethis%3c%2fa%3e%20%3ca%20href%3d%22https%3a%2f%2ffilepilot.tech%2f%22%3ekind%3c%2fa%3e%20of%20%3ca%20href%3d%22https%3a%2f%2ftaskslinger.net%2f%22%3esoftware%3c%2fa%3e%20these%20days%20though%2c%20and%20even%20fewer%20people%20willing%20to%20fund%20these%20sorts%20of%20endeavours.%20With%20there%20being%20existing%20%26ldquo%3bsolutions%26rdquo%3b%20to%20these%20sorts%20of%20problems%2c%20the%20natural%20response%20to%20proposing%20yet%20another%20tool%20to%20do%20effectively%20the%20same%20job%20is%20obviously%20going%20to%20be%20met%20with%20some%20degree%20of%20friction.%20However%2c%20I%20firmly%20believe%20that%20we%20can%20truly%20build%20something%20user-friendly%2c%20that%20respects%20the%20user%26rsquo%3bs%20privacy%20and%20hardware%2c%20but%20at%20the%20same%20time%20is%20robust%20and%20powerful%20enough%20to%20help%20reduce%20our%20reliance%20on%20third-parties%20to%20simply%20transfer%20a%20bit%20of%20data%20around%20%28besides%20your%20ISP%20of%20course%29.%3c%2fp%3e%0a%3cp%3eIn%20future%20posts%20I%20will%20demonstrate%20where%20I%20currently%20am%20with%20the%20project%2c%20but%20also%20try%20to%20delve%20a%20little%20deeper%20on%20the%20technical%20aspects%20of%20the%20implementation%20too%2c%20since%20I%20honestly%20find%20this%20somewhat%20low-level%20networking%20quite%20interesting.%3c%2fp%3e%0a%3cp%3eObviously%20no%20one%20is%20paying%20me%20to%20work%20on%20this%2c%20but%20if%20you%20happen%20to%20be%20floating%20in%20cash%20and%20want%20to%20fund%20this%20endeavour%2c%20feel%20free%20to%20reach%20out%21%3c%2fp%3e%0a%3cp%3eOn%20a%20more%20serious%20note%20though%2c%20I%20will%20continue%20plodding%20onwards%20with%20this%20project%20regardless%2c%20with%20the%20goal%20to%20eventually%20open%20source%20it%20at%20some%20point%20%28where%20it%20will%20be%20fodder%20for%20another%20AI%20model%20I%20am%20sure%29.%20I%20do%20have%20some%20ideas%20for%20how%20to%20monetise%20this%20long%20term%20with%20bespoke%20functionality%20for%20a%20more%20corporate%20clients%2c%20but%20I%20have%20resigned%20myself%20somewhat%20to%20the%20fact%20that%20this%20will%20likely%20remain%20a%20hobby%20project%20I%20will%20chip%20away%20at%20for%20the%20next%20few%20years%20and%20eventually%20release.%3c%2fp%3e%0a%3cp%3eRegardless%2c%20I%20think%20tooling%20like%20this%20should%20exist%2c%20if%20only%20to%20make%20my%20own%20life%20a%20little%20better.%3c%2fp%3e%0a%3chr%3e%0a%3cul%3e%0a%3cli%3eLocalSend%20-%20%3ca%20href%3d%22https%3a%2f%2flocalsend.org%2f%22%3ehttps%3a%2f%2flocalsend.org%2f%3c%2fa%3e%3c%2fli%3e%0a%3cli%3eSyncThing%20-%20%3ca%20href%3d%22https%3a%2f%2fsyncthing.net%2f%22%3ehttps%3a%2f%2fsyncthing.net%2f%3c%2fa%3e%3c%2fli%3e%0a%3cli%3eFile%20Pilot%20-%20%3ca%20href%3d%22https%3a%2f%2ffilepilot.tech%2f%22%3ehttps%3a%2f%2ffilepilot.tech%2f%3c%2fa%3e%3c%2fli%3e%0a%3cli%3eTaskSlinger%20-%20%3ca%20href%3d%22https%3a%2f%2ftaskslinger.net%2f%22%3ehttps%3a%2f%2ftaskslinger.net%2f%3c%2fa%3e%3c%2fli%3e%0a%3cli%3eRAD%20Debugger%20-%20%3ca%20href%3d%22https%3a%2f%2fgithub.com%2fEpicGamesExt%2fraddebugger%22%3ehttps%3a%2f%2fgithub.com%2fEpicGamesExt%2fraddebugger%3c%2fa%3e%3c%2fli%3e%0a%3c%2ful%3e%0a" title="Share via Email" target="_blank"><span class="fa-solid fa-envelope fa-2x" aria-hidden="true"></span></a>
+</div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; 2025 | Follow on <a class="follow-item" href="https://x.com/shivernz" target="_blank">X</a> | <a class="follow-item" href="https://github.com/shiver" target="_blank">GitHub</a></p>
+  </div>
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js" integrity="sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/c.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/cpp.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/csharp.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/rust.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/python.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/php.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/javascript.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/css.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/typescript.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T7DTW977S3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T7DTW977S3');
+</script>
+
+
+<script type="text/javascript">
+  const toc = document.querySelectorAll('#TableOfContents > ul > li > a')
+  const headings = document.querySelectorAll('.content > h2')
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        toc.forEach(t => {
+          if (t.textContent === entry.target.textContent) {
+            toc.forEach(t => t.closest('li')?.classList.remove('active'))
+            t.closest('li')?.classList.add('active')
+          }
+        })
+      }
+    })
+  }, {
+    root: null,
+    rootMargin: '0px 0px -50% 0px',
+    threshold: 0
+  })
+  headings.forEach(h => observer.observe(h))
+</script>
+
+
+
+</body>
