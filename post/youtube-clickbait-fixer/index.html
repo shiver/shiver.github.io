@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="" name="keywords">
+<meta content="Robert Vally" name="author">
+<meta property="og:title" content="Prototype: Youtube clickbait fixer">
+<meta property="og:url" content="https://shiver.github.io/post/youtube-clickbait-fixer/">
+<meta property="og:description" content="As you get older you get grumpier, and if that isn&rsquo;t the case for you then I suspect you might be doing it wrong somehow. Perhaps you&rsquo;re not holding it right? Getting grumpier is perfectly logical, after all; people continue to exist and a reprieve is unlikely within our lifetimes.
+With escalating levels of grumpiness comes an overpowering compulsion to complain about trivial annoyances in every day life. A quintessential first-world aggravation is the clickbait title.">
+<meta property="og:type" content="website" />
+<title>Prototype: Youtube clickbait fixer | </title>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Karla:wght@300;400;800&display=swap" rel="stylesheet">
+
+
+<link rel="shortcut icon" href="https://shiver.github.io//favicon.ico">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/base16/gruvbox-dark-hard.min.css">
+
+
+<link rel="stylesheet" href="https://shiver.github.io//css/style.css">
+
+</head>
+
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://shiver.github.io/"><h1 class="back is-4">🡠</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level">
+          
+          <a class="level-item" href="https://github.com/shiver" target="_blank">
+            <span class="icon">
+              <i class="fa-brands fa-github"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://x.com/shivernz" target="_blank">
+            <span class="icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="https://www.linkedin.com/in/robert-vally-3533a515" target="_blank">
+            <span class="icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+          </a>
+          
+          <a class="level-item" href="/index.xml" target="_blank">
+            <span class="icon">
+              <i class="fa-solid fa-rss"></i>
+            </span>
+          </a>
+          
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Prototype: Youtube clickbait fixer</h1>
+    <h2 class="subtitle">May 28, 2026 by Robert Vally</h2>
+    
+      <div class="tags">
+    
+        <a class="is-link" href="/tags/prototype">prototype</a>
+    
+        <a class="is-link" href="/tags/youtube">youtube</a>
+    
+        <a class="is-link" href="/tags/browser-addon">browser-addon</a>
+    
+</div>
+
+    
+    <hr>
+
+    
+
+    <div class="content">
+      <p>As you get older you get grumpier, and if that isn&rsquo;t the case for you then I suspect you might be doing it wrong somehow. Perhaps you&rsquo;re not holding it right? Getting grumpier is perfectly logical, after all; people continue to exist and a reprieve is unlikely within our lifetimes.</p>
+<p>With escalating levels of grumpiness comes an overpowering compulsion to complain about trivial annoyances in every day life. A quintessential first-world aggravation is the clickbait title. From classics such as &ldquo;single ladies in your area&rdquo;, to more modern &ldquo;we need to talk&rdquo;. Age turns these once trivial vexations into grave injustices. Who wouldn&rsquo;t want to know about the sudden spike in the number of ladies in your jurisdiction?</p>
+<p>The cunning ploy of course is that if you knew the contents secreted being that curiosity provoking title, you likely would never have clicked it in the first place. Until recently, having a good whinge about the state of the world was your only recourse. Let&rsquo;s be real, who has the time or energy to solve a problem of this <em>magnitude</em>?</p>
+<p>As luck would have it, AI has finally arrived onto the scene to provide the aging grumps the fuel necessary to turn agitation into action.</p>
+<p>The bi-product. A browser extension backed by a local AI model to generate a less anger inducing title and to provide a summary of the video contents which hopefully also gives a better idea for what the video is actually about.</p>
+<p><img src="/youtube_clickbait_fixer/youtube_clickbait_fixer_demo_faster.gif" alt="YouTube Clickbait Fixer Demo"></p>
+<p>This is where I think AI shines the most right now. For a project so banal, unlikely to have left the realm of thought, with a few simple prompts and some prodding in the right directions, we can quickly go from idea to implementation in minutes, not days.</p>
+<p>Obviously there was some prior research and work involved to get Qwen3.6 running locally on my now aging RTX 3080 (10GB VRAM + 32GB RAM), since we obviously can&rsquo;t burn real tokens on these sorts of things.</p>
+<p>The solution works as follows:</p>
+<ul>
+<li>A small Python <strong>ThreadingHTTPServer</strong> with a <strong>SQLite DB</strong> running on my local machine</li>
+<li>A trivial Firefox addon to alter the YouTube page to add the button, and to replace the video title</li>
+<li>When the button is pressed, we fire off a request to our little server, which in turn collects the transcript of the video from YouTube itself</li>
+<li>We then inject this transcript in a simple prompt and fire it off to our locally hosted <code>llama.cpp</code> with Qwen3.6 model (likely could have been done with a much smaller model)</li>
+</ul>
+<p>The prompt we send looks mostly like this:</p>
+<pre tabindex="0"><code>You generate accurate, non-clickbait YouTube metadata.
+Do not explain. Do not show reasoning. Return only valid JSON. /no_think
+
+Original title: {original_title}
+
+Given the transcript below, return JSON exactly like:
+{{&#34;title&#34;:&#34;one clear searchable title under 70 characters&#34;,&#34;summary&#34;:&#34;3-5 concise sentences summarizing the video&#34;}}
+
+Rules:
+- no clickbait
+- no exaggeration
+- no &#34;you won&#39;t believe&#34;, &#34;shocking&#34;, &#34;insane&#34;, etc.
+- title must accurately reflect the transcript
+- title must define the subject
+- summary must be factual and based only on the transcript
+
+Transcript:
+{transcript}
+</code></pre><p>This was just a small fun side-project, and not something I intend on making public. I don&rsquo;t really have the compulsion to maintain this sort of thing, and we could all do with a little less slop in our lives. The main purpose of course was just to experiment with local AI models and to see what kind of results we could get, and most of all, to scratch an itch to see if it could be done.</p>
+
+    </div>
+    
+    <div class="nav-center">
+    <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fshiver.github.io%2fpost%2fyoutube-clickbait-fixer%2f" title="Share on Facebook" target="_blank"><span class="fa-brands fa-facebook fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fshiver.github.io%2fpost%2fyoutube-clickbait-fixer%2f" title="Share on LinkedIn" target="_blank"><span class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="https://twitter.com/home?status=Prototype%3a%20Youtube%20clickbait%20fixer - https%3a%2f%2fshiver.github.io%2fpost%2fyoutube-clickbait-fixer%2f" title="Tweet this" target="_blank"><span class="fa-brands fa-x-twitter fa-2x"></span></a>
+    <a class="nav-item" href="http://www.reddit.com/submit?url=https%3a%2f%2fshiver.github.io%2fpost%2fyoutube-clickbait-fixer%2f&title=Prototype%3a%20Youtube%20clickbait%20fixer" title="Share on Reddit" target="_blank"><span class="fa-brands fa-reddit-alien fa-2x" aria-hidden="true"></span></a>
+    <a class="nav-item" href="mailto:?subject=Prototype%3a%20Youtube%20clickbait%20fixer&body=%3cp%3eAs%20you%20get%20older%20you%20get%20grumpier%2c%20and%20if%20that%20isn%26rsquo%3bt%20the%20case%20for%20you%20then%20I%20suspect%20you%20might%20be%20doing%20it%20wrong%20somehow.%20Perhaps%20you%26rsquo%3bre%20not%20holding%20it%20right%3f%20Getting%20grumpier%20is%20perfectly%20logical%2c%20after%20all%3b%20people%20continue%20to%20exist%20and%20a%20reprieve%20is%20unlikely%20within%20our%20lifetimes.%3c%2fp%3e%0a%3cp%3eWith%20escalating%20levels%20of%20grumpiness%20comes%20an%20overpowering%20compulsion%20to%20complain%20about%20trivial%20annoyances%20in%20every%20day%20life.%20A%20quintessential%20first-world%20aggravation%20is%20the%20clickbait%20title.%20From%20classics%20such%20as%20%26ldquo%3bsingle%20ladies%20in%20your%20area%26rdquo%3b%2c%20to%20more%20modern%20%26ldquo%3bwe%20need%20to%20talk%26rdquo%3b.%20Age%20turns%20these%20once%20trivial%20vexations%20into%20grave%20injustices.%20Who%20wouldn%26rsquo%3bt%20want%20to%20know%20about%20the%20sudden%20spike%20in%20the%20number%20of%20ladies%20in%20your%20jurisdiction%3f%3c%2fp%3e%0a%3cp%3eThe%20cunning%20ploy%20of%20course%20is%20that%20if%20you%20knew%20the%20contents%20secreted%20being%20that%20curiosity%20provoking%20title%2c%20you%20likely%20would%20never%20have%20clicked%20it%20in%20the%20first%20place.%20Until%20recently%2c%20having%20a%20good%20whinge%20about%20the%20state%20of%20the%20world%20was%20your%20only%20recourse.%20Let%26rsquo%3bs%20be%20real%2c%20who%20has%20the%20time%20or%20energy%20to%20solve%20a%20problem%20of%20this%20%3cem%3emagnitude%3c%2fem%3e%3f%3c%2fp%3e%0a%3cp%3eAs%20luck%20would%20have%20it%2c%20AI%20has%20finally%20arrived%20onto%20the%20scene%20to%20provide%20the%20aging%20grumps%20the%20fuel%20necessary%20to%20turn%20agitation%20into%20action.%3c%2fp%3e%0a%3cp%3eThe%20bi-product.%20A%20browser%20extension%20backed%20by%20a%20local%20AI%20model%20to%20generate%20a%20less%20anger%20inducing%20title%20and%20to%20provide%20a%20summary%20of%20the%20video%20contents%20which%20hopefully%20also%20gives%20a%20better%20idea%20for%20what%20the%20video%20is%20actually%20about.%3c%2fp%3e%0a%3cp%3e%3cimg%20src%3d%22%2fyoutube_clickbait_fixer%2fyoutube_clickbait_fixer_demo_faster.gif%22%20alt%3d%22YouTube%20Clickbait%20Fixer%20Demo%22%3e%3c%2fp%3e%0a%3cp%3eThis%20is%20where%20I%20think%20AI%20shines%20the%20most%20right%20now.%20For%20a%20project%20so%20banal%2c%20unlikely%20to%20have%20left%20the%20realm%20of%20thought%2c%20with%20a%20few%20simple%20prompts%20and%20some%20prodding%20in%20the%20right%20directions%2c%20we%20can%20quickly%20go%20from%20idea%20to%20implementation%20in%20minutes%2c%20not%20days.%3c%2fp%3e%0a%3cp%3eObviously%20there%20was%20some%20prior%20research%20and%20work%20involved%20to%20get%20Qwen3.6%20running%20locally%20on%20my%20now%20aging%20RTX%203080%20%2810GB%20VRAM%20%2b%2032GB%20RAM%29%2c%20since%20we%20obviously%20can%26rsquo%3bt%20burn%20real%20tokens%20on%20these%20sorts%20of%20things.%3c%2fp%3e%0a%3cp%3eThe%20solution%20works%20as%20follows%3a%3c%2fp%3e%0a%3cul%3e%0a%3cli%3eA%20small%20Python%20%3cstrong%3eThreadingHTTPServer%3c%2fstrong%3e%20with%20a%20%3cstrong%3eSQLite%20DB%3c%2fstrong%3e%20running%20on%20my%20local%20machine%3c%2fli%3e%0a%3cli%3eA%20trivial%20Firefox%20addon%20to%20alter%20the%20YouTube%20page%20to%20add%20the%20button%2c%20and%20to%20replace%20the%20video%20title%3c%2fli%3e%0a%3cli%3eWhen%20the%20button%20is%20pressed%2c%20we%20fire%20off%20a%20request%20to%20our%20little%20server%2c%20which%20in%20turn%20collects%20the%20transcript%20of%20the%20video%20from%20YouTube%20itself%3c%2fli%3e%0a%3cli%3eWe%20then%20inject%20this%20transcript%20in%20a%20simple%20prompt%20and%20fire%20it%20off%20to%20our%20locally%20hosted%20%3ccode%3ellama.cpp%3c%2fcode%3e%20with%20Qwen3.6%20model%20%28likely%20could%20have%20been%20done%20with%20a%20much%20smaller%20model%29%3c%2fli%3e%0a%3c%2ful%3e%0a%3cp%3eThe%20prompt%20we%20send%20looks%20mostly%20like%20this%3a%3c%2fp%3e%0a%3cpre%20tabindex%3d%220%22%3e%3ccode%3eYou%20generate%20accurate%2c%20non-clickbait%20YouTube%20metadata.%0aDo%20not%20explain.%20Do%20not%20show%20reasoning.%20Return%20only%20valid%20JSON.%20%2fno_think%0a%0aOriginal%20title%3a%20%7boriginal_title%7d%0a%0aGiven%20the%20transcript%20below%2c%20return%20JSON%20exactly%20like%3a%0a%7b%7b%26%2334%3btitle%26%2334%3b%3a%26%2334%3bone%20clear%20searchable%20title%20under%2070%20characters%26%2334%3b%2c%26%2334%3bsummary%26%2334%3b%3a%26%2334%3b3-5%20concise%20sentences%20summarizing%20the%20video%26%2334%3b%7d%7d%0a%0aRules%3a%0a-%20no%20clickbait%0a-%20no%20exaggeration%0a-%20no%20%26%2334%3byou%20won%26%2339%3bt%20believe%26%2334%3b%2c%20%26%2334%3bshocking%26%2334%3b%2c%20%26%2334%3binsane%26%2334%3b%2c%20etc.%0a-%20title%20must%20accurately%20reflect%20the%20transcript%0a-%20title%20must%20define%20the%20subject%0a-%20summary%20must%20be%20factual%20and%20based%20only%20on%20the%20transcript%0a%0aTranscript%3a%0a%7btranscript%7d%0a%3c%2fcode%3e%3c%2fpre%3e%3cp%3eThis%20was%20just%20a%20small%20fun%20side-project%2c%20and%20not%20something%20I%20intend%20on%20making%20public.%20I%20don%26rsquo%3bt%20really%20have%20the%20compulsion%20to%20maintain%20this%20sort%20of%20thing%2c%20and%20we%20could%20all%20do%20with%20a%20little%20less%20slop%20in%20our%20lives.%20The%20main%20purpose%20of%20course%20was%20just%20to%20experiment%20with%20local%20AI%20models%20and%20to%20see%20what%20kind%20of%20results%20we%20could%20get%2c%20and%20most%20of%20all%2c%20to%20scratch%20an%20itch%20to%20see%20if%20it%20could%20be%20done.%3c%2fp%3e%0a" title="Share via Email" target="_blank"><span class="fa-solid fa-envelope fa-2x" aria-hidden="true"></span></a>
+</div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; 2026 | Follow on <a class="follow-item" href="https://x.com/shivernz" target="_blank">X</a> | <a class="follow-item" href="https://github.com/shiver" target="_blank">GitHub</a></p>
+  </div>
+</section>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js" integrity="sha512-gU7kztaQEl7SHJyraPfZLQCNnrKdaQi5ndOyt4L4UPL/FHDd/uB9Je6KDARIqwnNNE27hnqoWLBq+Kpe4iHfeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/c.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/cpp.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/csharp.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/rust.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/python.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/php.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/javascript.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/css.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/languages/typescript.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T7DTW977S3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T7DTW977S3');
+</script>
+
+
+
+
+</body>
